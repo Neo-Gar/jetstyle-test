@@ -1,0 +1,44 @@
+.title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  input {
+    border-radius: .5rem;
+    border-color: #F18825;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: .5rem;
+  }
+  label {
+    color: #B4B4B4;
+  }
+  .formItem {
+    margin-top: 1rem;
+    padding: .5rem 1rem 1rem 1rem;
+    border-radius: .5rem;
+    border: solid 2px #F18825;
+  }
+  .formItem:not(:last-of-type) {
+    width: 100%;
+  }
+  .formItem:last-of-type {
+    background-color: #F18825;
+    color: white;
+    padding: .5rem 1rem;
+    align-self: flex-end;
+    transition: ease-in-out .2s;
+    input {
+      margin-top: unset;
+    }
+  }
+  .formItem:last-of-type:hover {
+    opacity: .75;
+  }
+}

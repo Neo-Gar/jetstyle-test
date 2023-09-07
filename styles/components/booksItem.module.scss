@@ -1,0 +1,32 @@
+.item {
+  display: grid;
+  grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+  align-items: center;
+  span {
+    text-align: left;
+  }
+  .author {
+    text-align: left;
+    text-decoration: underline #F18825;
+    cursor: pointer;
+    color: black !important;
+  }
+  button {
+    width: 100%;
+  }
+  button:not(:last-of-type) {
+    color: #E36A13;
+    text-decoration: underline #F18825;
+  }
+  button, .author {
+    transition: ease-in-out .2s;
+  }
+  button:hover, .author:hover {
+    opacity: .6;
+  }
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #E36A13;
+  }
+}

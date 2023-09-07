@@ -1,0 +1,24 @@
+.wrap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.logo {
+  align-self: flex-start;
+  a {
+    display: block;
+  }
+}
+
+.content {
+  align-self: center;
+  h2 {
+    font-size: 1.2rem;
+  }
+}
