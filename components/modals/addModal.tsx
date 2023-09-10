@@ -30,6 +30,12 @@ export const AddModal = () => {
           .catch(error => console.error(error.message))
 
         closeModal('addModal')
+        /**
+         * так можно делать только в сложных случаях
+         * например когда код обрабатывает ошибки и 
+         * становится понятно что все сломано, то тогда
+         * очень хорошо перезагрузить страницу
+         */
         window.location.reload();
     }
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
